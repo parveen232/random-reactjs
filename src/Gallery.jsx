@@ -1,14 +1,16 @@
-import NatureImg from "./NatureImg";
+import GalleryImg from "./GalleryImg";
 
 export default function Gallery() {
   return (
     <section>
-      <h1>Amazing Nature</h1>
-      <NatureImg />
-      <NatureImg />
-      <NatureImg />
+      <h1>Amazing Gallery</h1>
+      <div className="gallery">
+        <GalleryImg />
+        <GalleryImg />
+        <GalleryImg />
+        <GalleryImg />
+        <GalleryImg />
+      </div>
     </section>
   );
 }
-
-

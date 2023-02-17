@@ -13,3 +13,11 @@ h1 {
   color: royalblue;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  margin: 20px;
+}
