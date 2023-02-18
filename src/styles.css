@@ -18,6 +18,7 @@ h1 {
 .gallery {
   border: 2px solid royalblue;
   padding: 20px;
+  margin: 20px 0 20px;
 }
 
 ul {
@@ -55,4 +56,8 @@ h2 {
 .list-item {
   color: rebeccapurple;
   font-size: 20px;
+}
+
+.method {
+  color: crimson;
 }

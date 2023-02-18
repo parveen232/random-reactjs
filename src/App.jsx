@@ -1,4 +1,5 @@
 import CurrentDate from "./CurrentDate";
+import FilterList from "./FilterList";
 import Gallery from "./Gallery";
 import List from "./List";
 
@@ -12,7 +13,8 @@ export default function App() {
       <List type={type}/>
       <label htmlFor="gallery-size">Enter Gallery Size:</label>
       <input type="number" name="gallery-size" id="gallery-size" />
-      <Gallery size={5} type={type}/>
+      <Gallery size={7} type={type}/>
+      <FilterList />
     </div>
   );
 }

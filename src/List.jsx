@@ -1,6 +1,7 @@
 export default function List({ type }) {
   return (
     <div className="list">
+      <h2 className="method">map()</h2>
       <h2>List of image types for Gallery</h2>
       <ol>
         {type.map((x, i) => (
