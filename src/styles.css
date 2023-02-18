@@ -11,13 +11,48 @@ body {
 h1 {
   font-size: 32px;
   color: royalblue;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .gallery {
+  border: 2px solid royalblue;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.gallery-list {
   display: flex;
   flex-wrap: wrap;
 }
 
 .gallery-item {
   margin: 20px;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.list {
+  border: 2px solid royalblue;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: rebeccapurple;
+}
+
+.list-item {
+  color: rebeccapurple;
+  font-size: 20px;
 }

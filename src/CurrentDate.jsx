@@ -9,5 +9,5 @@ function formatDate() {
 }
 
 export default function CurrentDate() {
-  return <h1>Date: {formatDate()}</h1>;
+  return <h2>Date: {formatDate()}</h2>;
 }
