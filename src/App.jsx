@@ -1,3 +1,4 @@
+import Carousel from "./Carousel";
 import CurrentDate from "./CurrentDate";
 import FilterList from "./FilterList";
 import Gallery from "./Gallery";
@@ -13,6 +14,7 @@ export default function App() {
       <h1>Random ReactJS</h1>
       <CurrentDate />
       <List type={type} />
+      <Carousel />
       <GallerySizeForm />
       <GalleryButton />
       <Gallery size={7} type={type} />

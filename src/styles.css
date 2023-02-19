@@ -105,6 +105,24 @@ h2 {
   margin: 0 20px;
 }
 
+.carousel-container {
+  border: 2px solid royalblue;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-left {
+  text-align: center;
+}
+
+.carousel-img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
 button {
   cursor: pointer;
 }
