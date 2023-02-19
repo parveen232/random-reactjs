@@ -74,3 +74,37 @@ h2 {
   height: 60px;
   border-radius: 50vh;
 }
+
+.gs-form {
+  border: 2px solid royalblue;
+  padding: 20px;
+  margin: 20px 0 20px;
+}
+
+.g-btn {
+  background-color: royalblue;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+#gs-label {
+  color: rebeccapurple;
+  font-size: 20px;
+}
+
+#gallery-size {
+  color: rebeccapurple;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+  border: 2px solid royalblue;
+  margin: 0 20px;
+}
+
+button {
+  cursor: pointer;
+}

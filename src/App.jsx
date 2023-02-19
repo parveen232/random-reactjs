@@ -1,6 +1,8 @@
 import CurrentDate from "./CurrentDate";
 import FilterList from "./FilterList";
 import Gallery from "./Gallery";
+import GalleryButton from "./GalleryButton";
+import GallerySizeForm from "./GallerySizeForm";
 import List from "./List";
 
 export default function App() {
@@ -11,8 +13,8 @@ export default function App() {
       <h1>Random ReactJS</h1>
       <CurrentDate />
       <List type={type} />
-      <label htmlFor="gallery-size">Enter Gallery Size:</label>
-      <input type="number" name="gallery-size" id="gallery-size" />
+      <GallerySizeForm />
+      <GalleryButton />
       <Gallery size={7} type={type} />
       <FilterList />
     </div>
