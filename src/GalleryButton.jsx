@@ -1,11 +1,7 @@
-export default function GalleryButton() {
-  function handleClick() {
-    alert("button clicked");
-  }
-
+export default function GalleryButton({ showGallery, handleShowClick }) {
   return (
-    <button onClick={handleClick} className="g-btn">
-      Show Gallery
+    <button onClick={handleShowClick} className="g-btn">
+      {showGallery ? "Hide" : "Show"} Gallery
     </button>
   );
 }
