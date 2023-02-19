@@ -10,10 +10,10 @@ export default function App() {
     <div>
       <h1>Random ReactJS</h1>
       <CurrentDate />
-      <List type={type}/>
+      <List type={type} />
       <label htmlFor="gallery-size">Enter Gallery Size:</label>
       <input type="number" name="gallery-size" id="gallery-size" />
-      <Gallery size={7} type={type}/>
+      <Gallery size={7} type={type} />
       <FilterList />
     </div>
   );

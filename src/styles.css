@@ -61,3 +61,16 @@ h2 {
 .method {
   color: crimson;
 }
+
+.fl-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 2px solid crimson;
+}
+
+.fl-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50vh;
+}
