@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { carouselData } from "./data";
+import { carouselData } from "../data";
 
 export default function Carousel() {
   const [index, setIndex] = useState(0);
@@ -14,7 +14,7 @@ export default function Carousel() {
 
   let active = carouselData[index];
   return (
-    <>
+    <section className="carousel">
       <h2>Carousel</h2>
       <div className="carousel-container">
         <button onClick={handleLeftClick}>Left</button>
@@ -24,6 +24,6 @@ export default function Carousel() {
         </div>
         <button onClick={handleRightClick}>Right</button>
       </div>
-    </>
+    </section>
   );
 }

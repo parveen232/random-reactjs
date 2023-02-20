@@ -4,7 +4,7 @@
 
 body {
   font-family: sans-serif;
-  margin: 20px;
+  margin: 0;
   padding: 0;
 }
 
@@ -15,9 +15,17 @@ h1 {
   margin-bottom: 50px;
 }
 
-.gallery {
-  border: 2px solid royalblue;
+.date-container {
+  background-color: lightblue;
   padding: 20px;
+}
+
+.gallery-container {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.gallery {
   margin: 20px 0 20px;
 }
 
@@ -44,9 +52,8 @@ ul {
 }
 
 .list {
-  border: 2px solid royalblue;
+  background-color: lightcyan;
   padding: 20px;
-  margin-bottom: 30px;
 }
 
 h2 {
@@ -76,9 +83,7 @@ h2 {
 }
 
 .gs-form {
-  border: 2px solid royalblue;
-  padding: 20px;
-  margin: 20px 0 20px;
+  margin: 30px 0 30px;
 }
 
 .g-btn {
@@ -105,8 +110,12 @@ h2 {
   margin: 0 20px;
 }
 
+.carousel {
+  background-color: lightcyan;
+  padding: 20px;
+}
+
 .carousel-container {
-  border: 2px solid royalblue;
   padding: 20px;
   display: flex;
   justify-content: center;

@@ -1,9 +1,9 @@
-import Carousel from "./Carousel";
-import CurrentDate from "./CurrentDate";
-import FilterList from "./FilterList";
-import Gallery from "./Gallery";
-import GallerySizeForm from "./GallerySizeForm";
-import List from "./List";
+import Carousel from "./Components/Carousel";
+import CurrentDate from "./Components/CurrentDate";
+import FilterList from "./Components/FilterList";
+import Gallery from "./Components/Gallery/Gallery";
+// import GallerySizeForm from "./Components/Gallery/GallerySizeForm";
+import List from "./Components/List";
 
 export default function App() {
   const type = ["nature", "space", "history", "architecture", "furniture"];
@@ -13,7 +13,6 @@ export default function App() {
       <h1>Random ReactJS</h1>
       <CurrentDate />
       <Carousel />
-      <GallerySizeForm />
       <Gallery size={7} type={type} />
       <FilterList />
       <List type={type} />

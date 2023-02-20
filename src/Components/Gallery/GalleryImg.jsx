@@ -1,4 +1,4 @@
-export default function NatureImg({ randomType }) {
+export default function GalleryImg({ randomType }) {
   const src = `https://source.unsplash.com/random/300x300/?${randomType}`;
 
   return (

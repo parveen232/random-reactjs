@@ -9,5 +9,9 @@ function formatDate() {
 }
 
 export default function CurrentDate() {
-  return <h2>Date: {formatDate()}</h2>;
+  return (
+    <div className="date-container">
+      <h2>Date: {formatDate()}</h2>
+    </div>
+  )
 }

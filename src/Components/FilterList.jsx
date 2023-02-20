@@ -1,4 +1,4 @@
-import { people } from "./data.js";
+import { people } from "../data.js";
 // import { Fragment } from 'react';
 
 export default function FilterList() {
