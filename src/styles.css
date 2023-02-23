@@ -157,6 +157,21 @@ h2 {
   color: red;
 }
 
+.tech-container {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.type {
+  background-color: lightcyan;
+  padding: 10px;
+  margin: 15px 0 15px;
+}
+
+.type h3 {
+  color: royalblue;
+}
+
 button {
   cursor: pointer;
 }
