@@ -86,12 +86,15 @@ h2 {
   margin: 30px 0 30px;
 }
 
-.g-btn {
-  background-color: royalblue;
+.btn {
   color: #fff;
   font-size: 20px;
   border: none;
   padding: 10px 15px;
+}
+
+.g-btn {
+  background-color: royalblue;
   border-radius: 5px;
 }
 
@@ -147,10 +150,6 @@ h2 {
 
 .q-btn {
   background-color: rebeccapurple;
-  color: #fff;
-  padding: 10px 25px;
-  font-size: 20px;
-  border: none;
 }
 
 .error {
@@ -170,6 +169,21 @@ h2 {
 
 .type h3 {
   color: royalblue;
+}
+
+/* task app */
+
+.task-app {
+  margin: 20px;
+}
+
+#task-text {
+  padding: 10px 15px;
+  margin-right: 20px;
+}
+
+.ta-btn {
+  background-color: royalblue;
 }
 
 button {

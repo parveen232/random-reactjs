@@ -5,6 +5,7 @@ import Quiz from "./Components/Quiz";
 import Gallery from "./Components/Gallery/Gallery";
 import List from "./Components/List";
 import Tech from "./Components/Tech";
+import TaskApp from "./Components/TaskApp/TaskApp";
 
 export default function App() {
   const type = ["nature", "space", "history", "architecture", "furniture"];
@@ -17,6 +18,7 @@ export default function App() {
       <Gallery size={7} type={type} />
       <Quiz />
       <Tech />
+      <TaskApp />
       <FilterList />
       <List type={type} />
     </div>

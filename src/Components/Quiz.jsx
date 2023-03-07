@@ -38,7 +38,7 @@ export default function Quiz() {
         <br />
         <button
           disabled={answer.length === 0 || status === "submitting"}
-          className="q-btn"
+          className="q-btn btn"
         >
           Submit
         </button>
