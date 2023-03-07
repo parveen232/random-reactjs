@@ -1,14 +1,11 @@
 {
-  "name": "adopt-me",
+  "name": "random-reactjs",
   "version": "1.0.0",
-  "description": "An application to browse adoptable pets!",
-  "main": "index.js",
+  "description": "A random reactjs application",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +23,7 @@
   },
   "dependencies": {
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.4.1"
   }
 }

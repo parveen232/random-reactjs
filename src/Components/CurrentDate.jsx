@@ -1,17 +1,9 @@
-const now = new Date();
-
-function formatDate() {
-  return (
-    <>
-      {now.getDate()}/{now.getMonth()}/{now.getFullYear()}
-    </>
-  );
-}
+const today = new Date();
 
 export default function CurrentDate() {
   return (
     <div className="date-container">
-      <h2>Date: {formatDate()}</h2>
+      <h2>Date: {today.toDateString()}</h2>
     </div>
   )
 }
