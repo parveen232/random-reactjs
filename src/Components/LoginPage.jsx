@@ -1,34 +1,34 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function UsernameForm() {
+  // uncontrolled form inputs to controlled form inputs
+  const [username, setUsername] = useState(null);
 
   function handleChange(e) {
-    const value = e.target.value;
-    const isLowerCase = value === value.toLowerCase();
-    const btn = e.target.parentNode.parentNode.querySelector("button");
-    if (isLowerCase) {
-      btn.disabled = false;
-    } else {
-      btn.disabled = true;
-    }
+    setUsername(e.target.value.toLowerCase());
   }
 
   function handleSubmit(e) {
     e.preventDefault();
-    alert(`Your username is : ${e.target.elements.uInput.value}`);
+    alert(`Your username is : ${username}`);
   }
 
   return (
-    <>
-      <p>Username must be lowercase</p>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="uInput">Username:</label>
-          <input type="text" id="uInput" onChange={handleChange} />
-        </div>
-        <button type="submit" id="md">Submit</button>
-      </form>
-    </>
+    <form onSubmit={handleSubmit}>
+      <div>
+        <label htmlFor="uInput">Username:</label>
+        <input
+          type="text"
+          id="uInput"
+          value={username}
+          onChange={handleChange}
+        />
+      </div>
+      <button type="submit">
+        Submit
+      </button>
+    </form>
   );
 }
 
