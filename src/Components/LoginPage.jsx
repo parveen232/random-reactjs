@@ -1,44 +1,33 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
-function UsernameForm() {
-  // uncontrolled form inputs to controlled form inputs
-  const [username, setUsername] = useState(null);
+export default function LoginPage({ username, setUsername, setUserLogged }) {
+  let navigate = useNavigate();
 
   function handleChange(e) {
-    setUsername(e.target.value.toLowerCase());
+    setUsername(e.target.value.toLowerCase().trim());
   }
 
   function handleSubmit(e) {
     e.preventDefault();
-    alert(`Your username is : ${username}`);
+    setUserLogged(true);
+    navigate(`/${username}`);
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="uInput">Username:</label>
-        <input
-          type="text"
-          id="uInput"
-          value={username}
-          onChange={handleChange}
-        />
-      </div>
-      <button type="submit">
-        Submit
-      </button>
-    </form>
-  );
-}
-
-function LoginPage() {
-  return (
     <>
       <Link to="/">Home</Link>
-      <UsernameForm />
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="uInput">Username:</label>
+          <input
+            type="text"
+            id="uInput"
+            value={username}
+            onChange={handleChange}
+          />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
     </>
   );
 }
-
-export default LoginPage;

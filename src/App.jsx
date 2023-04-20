@@ -8,9 +8,24 @@ import List from "./Components/List";
 import Tech from "./Components/Tech";
 import TaskApp from "./Components/TaskApp/TaskApp";
 import LoginPage from "./Components/LoginPage";
+import { useState, useEffect } from "react";
+import UserPage from "./Components/UserPage";
 
 export default function App() {
   const type = ["nature", "space", "history", "architecture", "furniture"];
+
+  const [userLogged, setUserLogged] = useState(
+    JSON.parse(window.localStorage.getItem("userLogged")) ?? JSON.parse(false)
+  );
+
+  const [username, setUsername] = useState(
+    window.localStorage.getItem("username")
+  );
+
+  useEffect(() => {
+    window.localStorage.setItem("username", username);
+    window.localStorage.setItem("userLogged", JSON.stringify(userLogged));
+  });
 
   function Home() {
     return (
@@ -18,7 +33,11 @@ export default function App() {
         <header>
           <div className="h-container">
             <span className="logo">Random ReactJS</span>
-            <Link to="login">login</Link>
+            {JSON.parse(userLogged) ? (
+              <Link to={username}>{username}</Link>
+            ) : (
+              <Link to="login">login</Link>
+            )}
           </div>
         </header>
         <main>
@@ -39,7 +58,26 @@ export default function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<LoginPage />} />
+        <Route
+          path={username}
+          element={
+            <UserPage
+              username={username}
+              setUsername={setUsername}
+              setUserLogged={setUserLogged}
+            />
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <LoginPage
+              username={username}
+              setUsername={setUsername}
+              setUserLogged={setUserLogged}
+            />
+          }
+        />
       </Routes>
     </>
   );
